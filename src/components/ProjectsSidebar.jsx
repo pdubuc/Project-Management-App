@@ -1,5 +1,4 @@
 import { useState, useRef } from "react";
-import Project from "./Projects/Project.jsx";
 import Button from "./Button.jsx";
 
 export default function ProjectsSidebar({
@@ -32,7 +31,10 @@ export default function ProjectsSidebar({
 
           return (
             <li key={project.id}>
-              <button className={cssClasses} onClick={() => onSelectProject(project.id)}>
+              <button
+                className={cssClasses}
+                onClick={() => onSelectProject(project.id)}
+              >
                 {project.title}
               </button>
             </li>
