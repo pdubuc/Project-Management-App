@@ -1,5 +1,4 @@
 import { useState, useRef } from "react";
-import Project from "./Projects/Project.jsx";
 import Button from "./Button.jsx";
 
 export default function ProjectsSidebar({
